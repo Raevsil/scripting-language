@@ -68,7 +68,7 @@ def main():
     top_suspicious_requests = Counter(suspicious_requests).most_common(20)
     
     # Выводим результаты в лог файл
-    logging.info("Top-20 подозрительных запросов:")
+    logging.info("Top-20 suspicious request:")
     for request, reasons in top_suspicious_requests:
         logging.info(f"{request} - {', '.join(reasons)}")
 
