@@ -4,3 +4,5 @@
 3. Подсчет и вывод Top-20 подозрительных запросов.
 
 Для этого скрипта используются только стандартные библиотеки Python (re, collections, pathlib, logging)
+
+![image](https://github.com/Raevsil/scripting-language/assets/172980357/e79fa84a-6c14-4839-a548-eaa9ba8eda25)
