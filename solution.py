@@ -18,7 +18,7 @@ def is_suspicious_request(request_line, user_agent):
     
     # Убедимся, что parts содержит ровно три элемента
     if len(parts) != 3:
-        return reasons  # Если частей больше или меньше, возвращаем пустой список причин
+        return reasons
     
     method, url, protocol = parts
     
@@ -60,7 +60,7 @@ def analyze_log_file(log_file):
 
 def main():
     # Указываем путь к лог-файлу
-    log_file_path = Path('D:/access.log')  # Абсолютный путь для Windows
+    log_file_path = Path('D:/access.log')
     
     suspicious_requests = analyze_log_file(log_file_path)
     
